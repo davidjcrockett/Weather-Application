@@ -35,7 +35,7 @@ function getWeather(){
         const { temp } = data.main;
         const { description, icon } = data.weather[0];  
         const location = data.name;
-        const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+        const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         const fahrenheit = ((temp - 273.16) * 1.8) + 32;
 
         iconEl.src = iconUrl;
