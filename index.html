@@ -7,24 +7,29 @@
     <title>And Now... The Weather</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
+        <div class="title">
+            <p>🌦 The Weather 🌦</p>
+        </div>
         <div class="enter"> 
         <section class="inputs">
             <input placeholder="Enter any city..." value ="" id="input-text"><br>
             <button id="search-button" onClick="getWeather()">search</button>
         </section>
         </div>
-        <br>
-        <div class="weather-icon">
-        <img src="" alt="" srcset="" id="weather-icon">
+        <br> <br>
+        <div class="values-container">
+            <div class="weather-icon">
+            <img src="" alt="" srcset="" id="weather-icon">
+            </div>
+            <div class="temp-value" id="temp-value"><p>---</p></div>
+            <div class="temp-description" id="temp-description"><p>---</p></div>
+            <div class="location" id="location"><p>---</p></div>
         </div>
-        <div class="temp-value" id="temp-value"><p>---</p></div>
-        <div class="temp-description" id="temp-description"><p>---</p></div>
-        <div class="location" id="location"><p>---</p></div>
     </div>
 </body>
 <script src="script.js"></script>

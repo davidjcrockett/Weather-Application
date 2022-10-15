@@ -12,7 +12,22 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-    padding: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    width: 300px;
+    height: 75px;
+    border-radius: 10px 10px 0 0;
+}
+
+.title p{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 2em;
+    color: #2e294e;
 }
 
 .enter {
@@ -23,6 +38,11 @@ body {
     display: block;
     font-size: 2em;
     text-align: center;
+}
+
+.values-container{
+    height: 260px;
+    background-color: #2e294e17;
 }
 
 .weather-icon{
@@ -46,7 +66,6 @@ body {
     color: #2e294e;
     font-size: 3em;
     text-align: center;
-    cursor: pointer;
 }
 
 .temp-description p{
@@ -54,7 +73,7 @@ body {
     margin: 0;
     color: #2e294e;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     text-transform: capitalize;
 }
 
@@ -63,5 +82,5 @@ body {
     padding: 0;
     color: #2e294e;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
 }
