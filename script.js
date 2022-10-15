@@ -1,4 +1,10 @@
-var apiKey = config.MY_KEY;
+var apiKey = localStorage.getItem("apiKey");
+  if (!apiKey) {
+    apiKey = prompt("Enter Your Free API Key from OpenWeatherMap:");
+    var apiKey = localStorage.setItem("apiKey", apiKey);
+  }
+
+const api = apiKey;
 
 //Query Selector
 const iconEl = document.querySelector("#weather-icon");
@@ -7,7 +13,7 @@ const descriptionEl = document.querySelector("#temp-description p");
 const locationEl = document.querySelector("#location p");
 
 //API Key
-const key = apiKey;
+const key = api;
 
 function getWeather(){
 
