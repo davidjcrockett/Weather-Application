@@ -30,11 +30,11 @@ function getWeather(){
         const { description, icon } = data.weather[0];  
         const location = data.name;
         const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
-        const fahrenheit = (temp * 9) / 5 + 32;
+        const fahrenheit = ((temp - 273.16) * 1.8) + 32;
 
         iconEl.src = iconUrl;
         descriptionEl.textContent = `${description}`;
-        tempEl.textContent = `${fahrenheit}`;
+        tempEl.textContent = `${fahrenheit.toFixed(2)} °F`;
         locationEl.textContent = `${location}`;
 
     });
