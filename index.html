@@ -12,14 +12,19 @@
 </head>
 <body>
     <div class="container">
+        <div class="enter"> 
         <section class="inputs">
-            <input placeholder="Enter any city..." value ="" id="input-text">
+            <input placeholder="Enter any city..." value ="" id="input-text"><br>
             <button id="search-button" onClick="getWeather()">search</button>
         </section>
+        </div>
+        <br>
+        <div class="weather-icon">
         <img src="" alt="" srcset="" id="weather-icon">
-        <div id="temp-value"><p>---</p></div>
-        <div id="temp-description"><p>---</p></div>
-        <div id="location"><p>---</p></div>
+        </div>
+        <div class="temp-value" id="temp-value"><p>---</p></div>
+        <div class="temp-description" id="temp-description"><p>---</p></div>
+        <div class="location" id="location"><p>---</p></div>
     </div>
 </body>
 <script src="config.js"></script>
