@@ -1,7 +1,7 @@
 var apiKey = config.MY_KEY;
 
 //Query Selector
-const iconEl = document.querySelector("#icon");
+const iconEl = document.querySelector("#weather-icon");
 const tempEl = document.querySelector("#temp-value p");
 const descriptionEl = document.querySelector("#temp-description p");
 const locationEl = document.querySelector("#location p");
@@ -29,7 +29,10 @@ function getWeather(){
     .then((data) => {
 
         console.log(data);
-     
+        console.log(data.weather[0].icon);
+        console.log(data.main.temp)
+        console.log(data.weather[0].main)
+        console.log(data.name);
 
     });
 }
