@@ -46,3 +46,26 @@ function getWeather(){
     });
 }
 
+let arr = [98, 45, 78, 9, 0];
+ 
+for (let i = arr.length - 1; i >= 0; i--) {
+    console.log(arr[i]);
+}
+
+console.log("----------------")
+
+function map (x, y) {
+    const result = [];
+    for (let i = 0; i < y.length; i++) {
+        result[i] = x(y[i]);
+    } 
+    return result;
+}
+
+const x = function (y) {
+    return y + 10;
+}
+
+const numbers = [98, 45, 78, 9, 0];
+const plusTen = map(x, numbers);
+console.log(plusTen);
